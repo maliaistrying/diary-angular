@@ -239,6 +239,6 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 **Author**: Maleeha Farooqui  
 - GitHub: [@maliaistrying](https://github.com/maliaistrying)  
-- Email: [YourEmail@example.com](mailto:YourEmail@example.com)
+- Email: [maliawaris1456@gmail.com](mailto:YourEmail@example.com)
 
 Feel free to reach out for feedback, questions, or collaborations!
