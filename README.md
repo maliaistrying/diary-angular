@@ -153,15 +153,31 @@ Copy
 Edit
 
 frontend/src/app/
+
 ├── diary-form/             # Component for creating or editing diary entries.
+
 ├── diary/                  # Component for displaying the list of diary entries.
+
 ├── header/                 # Header navigation component.
+
 ├── login/                  # Component for user login functionality.
+
 ├── shared/                 # Shared modules, services, and utilities.
+
 ├── sign-up/                # Component for user registration.
+
 ├── app-routing.module.ts   # Defines application routes.
-├── app.component.*         # Main application component files (HTML, CSS, TS).
+
+├── app.component.\*         # Main application component files (HTML, CSS, TS).
+
 ├── app.module.ts           # Angular module containing component declarations and imports.
+
+
+
+---
+
+This should now be perfectly formatted for GitHub's Markdown preview. You can copy and paste this directly into your `README.md` file! Let me know if you'd like any additional changes. 😊
+
 
 Authentication System
 The authentication system is designed to ensure secure user access:
