@@ -1,10 +1,10 @@
-# **Diary-Angular**
+# Diary-Angular
 
 An intuitive, feature-rich diary application built with **Angular**, designed to help users seamlessly record, manage, and reflect on their daily activities and thoughts.
 
 ---
 
-## **Table of Contents**
+## Table of Contents
 
 - [About the Project](#about-the-project)
 - [Features](#features)
@@ -24,9 +24,10 @@ An intuitive, feature-rich diary application built with **Angular**, designed to
 
 ---
 
-## **About the Project**
+## About the Project
 
 The **Diary-Angular** project is a personal diary application that allows users to:
+
 - Securely log in and manage their personalized diary entries.
 - Record daily entries with timestamps.
 - Organize entries by categories or tags.
@@ -35,14 +36,14 @@ The **Diary-Angular** project is a personal diary application that allows users 
 
 ---
 
-## **Features**
+## Features
 
 - **Secure Authentication System**: 
   - Register and log in using email and password.
-  - Token-based authentication using **JWT (JSON Web Tokens)** for session security.
-  - Encrypted password storage using **bcrypt**.
-  
-- **CRUD Operations** for Diary Entries:
+  - Token-based authentication using JWT (JSON Web Tokens) for session security.
+  - Encrypted password storage using bcrypt.
+
+- **CRUD Operations for Diary Entries**:
   - Create, update, and delete diary entries.
   - View entries by date, tag, or category.
 
@@ -54,7 +55,7 @@ The **Diary-Angular** project is a personal diary application that allows users 
 
 ---
 
-## **Technologies Used**
+## Technologies Used
 
 - **Frontend**:
   - **Angular**: For building the dynamic user interface.
@@ -70,27 +71,30 @@ The **Diary-Angular** project is a personal diary application that allows users 
 
 ---
 
-## **Getting Started**
+## Getting Started
 
 Follow these steps to set up the project locally.
 
-### **Prerequisites**
+### Prerequisites
 
 Ensure you have the following tools installed on your system:
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [Angular CLI](https://angular.io/cli) (v12 or higher)
-- [MongoDB](https://www.mongodb.com/) (local or cloud setup)
+
+- **Node.js** (v14 or higher)
+- **Angular CLI** (v12 or higher)
+- **MongoDB** (local or cloud setup)
 - A code editor like [Visual Studio Code](https://code.visualstudio.com/)
 
 ---
 
-### **Installation**
+### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/maliaistrying/diary-angular.git
    cd diary-angular
 Install dependencies:
+
 bash
 Copy
 Edit
@@ -110,6 +114,7 @@ Database Configuration
 The application uses MongoDB to store user and diary data. Configure the database URI and secret key for JWT in the backend.
 
 Create a .env file in the backend folder and add the following:
+
 plaintext
 Copy
 Edit
@@ -127,6 +132,7 @@ Copy
 Edit
 npm run start
 The backend API server will start at http://localhost:5000.
+
 Start the Angular frontend:
 
 Navigate to the frontend directory and run:
@@ -135,50 +141,31 @@ Copy
 Edit
 ng serve
 The Angular application will be available at http://localhost:4200.
+
 Folder Structure
 Backend Folder Structure
 graphql
 Copy
 Edit
-
 backend/
 ├── entry-schema.js         # MongoDB schema for diary entries.
 ├── rest.js                 # API routes for handling diary-related requests.
 ├── server.js               # Main server file to initialize the backend.
 ├── user-model.js           # MongoDB schema for user authentication and details.
-
 Frontend App Folder Structure
 ruby
 Copy
 Edit
-
 frontend/src/app/
-
 ├── diary-form/             # Component for creating or editing diary entries.
-
 ├── diary/                  # Component for displaying the list of diary entries.
-
 ├── header/                 # Header navigation component.
-
 ├── login/                  # Component for user login functionality.
-
 ├── shared/                 # Shared modules, services, and utilities.
-
 ├── sign-up/                # Component for user registration.
-
 ├── app-routing.module.ts   # Defines application routes.
-
-├── app.component.\*         # Main application component files (HTML, CSS, TS).
-
+├── app.component.*         # Main application component files (HTML, CSS, TS).
 ├── app.module.ts           # Angular module containing component declarations and imports.
-
-
-
----
-
-This should now be perfectly formatted for GitHub's Markdown preview. You can copy and paste this directly into your `README.md` file! Let me know if you'd like any additional changes. 😊
-
-
 Authentication System
 The authentication system is designed to ensure secure user access:
 
@@ -201,21 +188,60 @@ Contributing
 We welcome contributions from the community! To contribute:
 
 Fork the repository.
+
 Create a new branch:
+
 bash
 Copy
 Edit
 git checkout -b feature/your-feature-name
 Make your changes and commit them:
+
 bash
 Copy
 Edit
 git commit -m "Add your feature description"
 Push the changes:
+
 bash
 Copy
 Edit
 git push origin feature/your-feature-name
 Open a pull request on GitHub.
+
 License
-This project is licensed under the MIT License. See the LICENSE file for details
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Contact
+Author: Maleeha Farooqui
+
+GitHub: @maliaistrying
+Email: YourEmail@example.com
+Feel free to reach out for feedback, questions, or collaborations!
+
+vbnet
+Copy
+Edit
+
+### Key points to check:
+
+- I’ve made sure code blocks (e.g., installation commands, config files) are wrapped in triple backticks (```) for correct syntax highlighting.
+- All links should work directly on GitHub and should be clickable, like the [LICENSE](LICENSE) or email addresses.
+- The directory and file structure is properly listed using `code blocks` for clear visualization.
+
+Please copy and paste this into your **`README.md`** file on GitHub. This should render perfectly!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ChatGPT can make mistakes. Check important info.
+?
