@@ -93,69 +93,80 @@ Ensure you have the following tools installed on your system:
    ```bash
    git clone https://github.com/maliaistrying/diary-angular.git
    cd diary-angular
-Install dependencies:
+   ```
 
-bash
-Copy
-Edit
-npm install
-Setting Up MongoDB
-Install MongoDB
-If you don't already have MongoDB installed, download it here and follow the installation instructions.
+2. Install dependencies:
 
-Start MongoDB
-For a local MongoDB setup, start the MongoDB service by running:
+   ```bash
+   npm install
+   ```
 
-bash
-Copy
-Edit
-mongod
-Database Configuration
-The application uses MongoDB to store user and diary data. Configure the database URI and secret key for JWT in the backend.
+---
 
-Create a .env file in the backend folder and add the following:
+### Setting Up MongoDB
 
-plaintext
-Copy
-Edit
-MONGO_URI=mongodb://localhost:27017/diary-angular
-JWT_SECRET=your_jwt_secret_key
-Initialize Collections
-The backend will automatically create the required users and entries collections in MongoDB when the application starts and actions are performed.
+1. **Install MongoDB**  
+   If you don't already have MongoDB installed, download it [here](https://www.mongodb.com/try/download/community) and follow the installation instructions.
 
-Running the Application
-Start the backend server:
+2. **Start MongoDB**  
+   For a local MongoDB setup, start the MongoDB service by running:
 
-Navigate to the backend directory and run:
-bash
-Copy
-Edit
-npm run start
-The backend API server will start at http://localhost:5000.
+   ```bash
+   mongod
+   ```
 
-Start the Angular frontend:
+3. **Database Configuration**  
+   The application uses MongoDB to store user and diary data. Configure the database URI and secret key for JWT in the backend.
 
-Navigate to the frontend directory and run:
-bash
-Copy
-Edit
-ng serve
-The Angular application will be available at http://localhost:4200.
+   - Create a `.env` file in the **backend** folder and add the following:
 
-Folder Structure
-Backend Folder Structure
-graphql
-Copy
-Edit
+     ```plaintext
+     MONGO_URI=mongodb://localhost:27017/diary-angular
+     JWT_SECRET=your_jwt_secret_key
+     ```
+
+4. **Initialize Collections**  
+   The backend will automatically create the required `users` and `entries` collections in MongoDB when the application starts and actions are performed.
+
+---
+
+### Running the Application
+
+1. Start the backend server:
+   - Navigate to the backend directory and run:
+
+   ```bash
+   npm run start
+   ```
+
+   The backend API server will start at `http://localhost:5000`.
+
+2. Start the Angular frontend:
+   - Navigate to the frontend directory and run:
+
+   ```bash
+   ng serve
+   ```
+
+   The Angular application will be available at [http://localhost:4200](http://localhost:4200).
+
+---
+
+## Folder Structure
+
+### Backend Folder Structure
+
+```
 backend/
 ├── entry-schema.js         # MongoDB schema for diary entries.
 ├── rest.js                 # API routes for handling diary-related requests.
 ├── server.js               # Main server file to initialize the backend.
 ├── user-model.js           # MongoDB schema for user authentication and details.
-Frontend App Folder Structure
-ruby
-Copy
-Edit
+```
+
+### Frontend App Folder Structure
+
+```
 frontend/src/app/
 ├── diary-form/             # Component for creating or editing diary entries.
 ├── diary/                  # Component for displaying the list of diary entries.
@@ -166,82 +177,68 @@ frontend/src/app/
 ├── app-routing.module.ts   # Defines application routes.
 ├── app.component.*         # Main application component files (HTML, CSS, TS).
 ├── app.module.ts           # Angular module containing component declarations and imports.
-Authentication System
+```
+
+---
+
+## Authentication System
+
 The authentication system is designed to ensure secure user access:
 
-User Registration:
+1. **User Registration**:
+   - Passwords are hashed using **bcrypt** before being stored in the database.
+   - User details are saved in the `users` collection in MongoDB.
 
-Passwords are hashed using bcrypt before being stored in the database.
-User details are saved in the users collection in MongoDB.
-User Login:
+2. **User Login**:
+   - Credentials are verified against the database.
+   - On successful authentication, a **JWT** is generated and sent to the user.
 
-Credentials are verified against the database.
-On successful authentication, a JWT is generated and sent to the user.
-Session Validation:
+3. **Session Validation**:
+   - Protected routes in the backend validate the user's token.
+   - Angular guards are used to prevent unauthorized access to frontend routes.
 
-Protected routes in the backend validate the user's token.
-Angular guards are used to prevent unauthorized access to frontend routes.
-Logout:
+4. **Logout**:
+   - Tokens are invalidated on the client-side by removing them from local storage.
 
-Tokens are invalidated on the client-side by removing them from local storage.
-Contributing
+---
+
+## Contributing
+
 We welcome contributions from the community! To contribute:
 
-Fork the repository.
+1. Fork the repository.
+2. Create a new branch:
 
-Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-bash
-Copy
-Edit
-git checkout -b feature/your-feature-name
-Make your changes and commit them:
+3. Make your changes and commit them:
 
-bash
-Copy
-Edit
-git commit -m "Add your feature description"
-Push the changes:
+   ```bash
+   git commit -m "Add your feature description"
+   ```
 
-bash
-Copy
-Edit
-git push origin feature/your-feature-name
-Open a pull request on GitHub.
+4. Push the changes:
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+   ```bash
+   git push origin feature/your-feature-name
+   ```
 
-Contact
-Author: Maleeha Farooqui
+5. Open a pull request on GitHub.
 
-GitHub: @maliaistrying
-Email: YourEmail@example.com
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+**Author**: Maleeha Farooqui  
+- GitHub: [@maliaistrying](https://github.com/maliaistrying)  
+- Email: [YourEmail@example.com](mailto:YourEmail@example.com)
+
 Feel free to reach out for feedback, questions, or collaborations!
-
-vbnet
-Copy
-Edit
-
-### Key points to check:
-
-- I’ve made sure code blocks (e.g., installation commands, config files) are wrapped in triple backticks (```) for correct syntax highlighting.
-- All links should work directly on GitHub and should be clickable, like the [LICENSE](LICENSE) or email addresses.
-- The directory and file structure is properly listed using `code blocks` for clear visualization.
-
-Please copy and paste this into your **`README.md`** file on GitHub. This should render perfectly!
-
-
-
-
-
-
-
-
-
-
-
-
-
-ChatGPT can make mistakes. Check important info.
-?
