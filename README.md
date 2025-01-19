@@ -59,7 +59,7 @@ The **Diary-Angular** project is a personal diary application that allows users 
 - **Frontend**:
   - **Angular**: For building the dynamic user interface.
   - **RxJS**: For managing reactive data streams.
-  - **SCSS**: For advanced styling.
+  - **CSS**: For advanced styling.
   
 - **Backend**:
   - **Node.js**: Backend server for handling API requests.
@@ -96,45 +96,45 @@ Copy
 Edit
 npm install
 Setting Up MongoDB
-Install MongoDB:
+Install MongoDB
 If you don't already have MongoDB installed, download it here and follow the installation instructions.
 
-Start MongoDB:
-If you're using a local instance, start the MongoDB service:
+Start MongoDB
+For a local MongoDB setup, start the MongoDB service by running:
 
 bash
 Copy
 Edit
 mongod
-Database Configuration:
-The application uses MongoDB for storing user and diary data. You need to set the database URI in the backend's environment file.
+Database Configuration
+The application uses MongoDB to store user and diary data. Configure the database URI and secret key for JWT in the backend.
 
-Create a .env file in the backend folder:
+Create a .env file in the backend folder and add the following:
 plaintext
 Copy
 Edit
 MONGO_URI=mongodb://localhost:27017/diary-angular
 JWT_SECRET=your_jwt_secret_key
-Initialize Collections:
+Initialize Collections
+The backend will automatically create the required users and entries collections in MongoDB when the application starts and actions are performed.
 
-The backend will automatically create users and entries collections when the application starts and you perform actions.
 Running the Application
-Start the backend server: Navigate to the backend directory and run:
+Start the backend server:
 
+Navigate to the backend directory and run:
 bash
 Copy
 Edit
 npm run start
-This will start the API server on http://localhost:5000.
+The backend API server will start at http://localhost:5000.
+Start the Angular frontend:
 
-Start the Angular frontend: Navigate to the frontend directory and run:
-
+Navigate to the frontend directory and run:
 bash
 Copy
 Edit
 ng serve
-By default, the application will run at http://localhost:4200.
-
+The Angular application will be available at http://localhost:4200.
 Folder Structure
 Backend Folder Structure
 graphql
@@ -198,10 +198,4 @@ Edit
 git push origin feature/your-feature-name
 Open a pull request on GitHub.
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-Author: Maleeha Farooqui
-
-GitHub: @maliaistrying
-Email: YourEmail@example.com
+This project is licensed under the MIT License. See the LICENSE file for details
