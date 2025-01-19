@@ -140,15 +140,18 @@ Backend Folder Structure
 graphql
 Copy
 Edit
+
 backend/
 ├── entry-schema.js         # MongoDB schema for diary entries.
 ├── rest.js                 # API routes for handling diary-related requests.
 ├── server.js               # Main server file to initialize the backend.
 ├── user-model.js           # MongoDB schema for user authentication and details.
+
 Frontend App Folder Structure
 ruby
 Copy
 Edit
+
 frontend/src/app/
 ├── diary-form/             # Component for creating or editing diary entries.
 ├── diary/                  # Component for displaying the list of diary entries.
@@ -159,6 +162,7 @@ frontend/src/app/
 ├── app-routing.module.ts   # Defines application routes.
 ├── app.component.*         # Main application component files (HTML, CSS, TS).
 ├── app.module.ts           # Angular module containing component declarations and imports.
+
 Authentication System
 The authentication system is designed to ensure secure user access:
 
